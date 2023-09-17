@@ -10,11 +10,7 @@ Web Based Project , Html , CSS , JavaScript , MongoDB
 
 **Developer:**
 
-<<<<<<< HEAD
-This crime detection system will be a mobile application.
-=======
 Muhammad Bilal Baig
->>>>>>> bb66dd6ec5d335602dea70ec4460c4c392662fd3
 
 **Course:**
 

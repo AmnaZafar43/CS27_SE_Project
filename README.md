@@ -1,24 +1,24 @@
-# CS27_SE_Project
+#                                  Hospital Management System
 
-**Project Title**
+**Description**:	
 
-Crime Detection
+The aim of this task is to develop a web application about hospital management system(hms) which automate patient registration, schedule appointments, laboratory management, ward management, pharmacy management etc.
 
-**Project Description**
+**Technology:**
 
-Crime detective will be a web application, will serve as spinal between civilians and police force. This app will connect the force and civilians. The civilians can enjoy this app for their convenience before getting arrest. The police stations can view, announce and can investigate the FIRs. Accountability is integral process of all times. Status of FIRs will be shown with police stations can view civilians and above authorities.  
+Web Based Project , Html , CSS , JavaScript , MongoDB
 
-**Project Technology**
+**Developer:**
 
-This crime detection system will be a web application.
+<<<<<<< HEAD
+This crime detection system will be a mobile application.
+=======
+Muhammad Bilal Baig
+>>>>>>> bb66dd6ec5d335602dea70ec4460c4c392662fd3
 
-**Developer Name**
+**Course:**
 
-Muhammad Talha(2021-CS-22)
-
-**Course Name**
-
-Software Engineering(SE)
+Software Engineering
 
 
 

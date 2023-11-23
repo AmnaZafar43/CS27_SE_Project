@@ -8,3 +8,4 @@ D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hos
 D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital-management-system.exe
 D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital-management-system.pdb
 D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.Login.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.SignUp.resources

@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.Signupbtn = new System.Windows.Forms.Button();
             this.Loginbtn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.passwordtbx = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Usernmetbx = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,15 +47,15 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Exitbtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,17 +79,39 @@
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label7.Name = "label7";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1"),
+            resources.GetString("comboBox1.Items2"),
+            resources.GetString("comboBox1.Items3"),
+            resources.GetString("comboBox1.Items4")});
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label6.Name = "label6";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label5.Name = "label5";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Signupbtn
             // 
@@ -98,6 +120,7 @@
             this.Signupbtn.ForeColor = System.Drawing.Color.RoyalBlue;
             this.Signupbtn.Name = "Signupbtn";
             this.Signupbtn.UseVisualStyleBackColor = false;
+            this.Signupbtn.Click += new System.EventHandler(this.Signupbtn_Click);
             // 
             // Loginbtn
             // 
@@ -106,6 +129,7 @@
             this.Loginbtn.ForeColor = System.Drawing.Color.White;
             this.Loginbtn.Name = "Loginbtn";
             this.Loginbtn.UseVisualStyleBackColor = false;
+            this.Loginbtn.Click += new System.EventHandler(this.Loginbtn_Click);
             // 
             // panel4
             // 
@@ -114,6 +138,7 @@
             this.panel4.Controls.Add(this.pictureBox3);
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // passwordtbx
             // 
@@ -121,13 +146,7 @@
             this.passwordtbx.ForeColor = System.Drawing.Color.RoyalBlue;
             this.passwordtbx.Name = "passwordtbx";
             this.passwordtbx.UseSystemPasswordChar = true;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::hospital_management_system.Properties.Resources.icons8_password_32;
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
+            this.passwordtbx.TextChanged += new System.EventHandler(this.passwordtbx_TextChanged);
             // 
             // panel3
             // 
@@ -136,19 +155,14 @@
             this.panel3.Controls.Add(this.pictureBox2);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // Usernmetbx
             // 
             resources.ApplyResources(this.Usernmetbx, "Usernmetbx");
             this.Usernmetbx.ForeColor = System.Drawing.Color.RoyalBlue;
             this.Usernmetbx.Name = "Usernmetbx";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::hospital_management_system.Properties.Resources.icons8_username_32;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
+            this.Usernmetbx.TextChanged += new System.EventHandler(this.Usernmetbx_TextChanged);
             // 
             // label4
             // 
@@ -176,6 +190,7 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label1.Name = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -183,6 +198,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Exitbtn
             // 
@@ -200,24 +216,23 @@
             this.pictureBox1.Image = global::hospital_management_system.Properties.Resources.Hospital_Management_System;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // comboBox1
+            // pictureBox3
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2"),
-            resources.GetString("comboBox1.Items3"),
-            resources.GetString("comboBox1.Items4")});
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
+            this.pictureBox3.Image = global::hospital_management_system.Properties.Resources.icons8_password_32;
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // label7
+            // pictureBox2
             // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label7.Name = "label7";
+            this.pictureBox2.Image = global::hospital_management_system.Properties.Resources.icons8_username_32;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Login
             // 
@@ -231,12 +246,12 @@
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

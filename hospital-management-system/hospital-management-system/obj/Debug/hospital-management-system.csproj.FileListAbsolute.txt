@@ -1,0 +1,10 @@
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\bin\Debug\hospital-management-system.exe.config
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\bin\Debug\hospital-management-system.exe
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\bin\Debug\hospital-management-system.pdb
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital-management-system.csproj.AssemblyReference.cache
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.Properties.Resources.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital-management-system.csproj.GenerateResource.cache
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital-management-system.csproj.CoreCompileInputs.cache
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital-management-system.exe
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital-management-system.pdb
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.Login.resources

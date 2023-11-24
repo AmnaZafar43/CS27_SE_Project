@@ -50,6 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\Appiontment.cs" />
+    <Compile Include="BL\Doctor.cs" />
+    <Compile Include="BL\FeedBackPatient.cs" />
+    <Compile Include="BL\Nurse.cs" />
+    <Compile Include="BL\OperationTheater.cs" />
+    <Compile Include="BL\OpertaionSchedule.cs" />
+    <Compile Include="BL\Patient.cs" />
+    <Compile Include="BL\PatientEmergencyHistory.cs" />
+    <Compile Include="BL\PatientRecognition.cs" />
+    <Compile Include="BL\Prescription.cs" />
+    <Compile Include="BL\Surgeon.cs" />
+    <Compile Include="BL\SurgeonAvailability.cs" />
+    <Compile Include="BL\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\Login.cs">

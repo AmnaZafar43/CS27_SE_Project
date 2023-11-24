@@ -30,16 +30,16 @@
         {
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.role_cbx = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Signupbtn = new System.Windows.Forms.Button();
             this.Loginbtn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.passwordtbx = new System.Windows.Forms.TextBox();
+            this.password_tbx = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Usernmetbx = new System.Windows.Forms.TextBox();
+            this.Username_tbx = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -79,19 +79,18 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Select Role";
             // 
-            // comboBox1
+            // role_cbx
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Admin",
+            this.role_cbx.FormattingEnabled = true;
+            this.role_cbx.Items.AddRange(new object[] {
             "Doctor",
             "Surgeon",
             "Nurse",
             "Patient"});
-            this.comboBox1.Location = new System.Drawing.Point(210, 255);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(112, 32);
-            this.comboBox1.TabIndex = 10;
+            this.role_cbx.Location = new System.Drawing.Point(210, 255);
+            this.role_cbx.Name = "role_cbx";
+            this.role_cbx.Size = new System.Drawing.Size(112, 32);
+            this.role_cbx.TabIndex = 10;
             // 
             // label5
             // 
@@ -132,26 +131,27 @@
             this.Loginbtn.TabIndex = 6;
             this.Loginbtn.Text = "SignUp";
             this.Loginbtn.UseVisualStyleBackColor = false;
+            this.Loginbtn.Click += new System.EventHandler(this.Loginbtn_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.passwordtbx);
+            this.panel4.Controls.Add(this.password_tbx);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Location = new System.Drawing.Point(-1, 210);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(435, 33);
             this.panel4.TabIndex = 5;
             // 
-            // passwordtbx
+            // password_tbx
             // 
-            this.passwordtbx.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.passwordtbx.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.passwordtbx.Location = new System.Drawing.Point(43, 3);
-            this.passwordtbx.Name = "passwordtbx";
-            this.passwordtbx.Size = new System.Drawing.Size(386, 27);
-            this.passwordtbx.TabIndex = 2;
-            this.passwordtbx.UseSystemPasswordChar = true;
+            this.password_tbx.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.password_tbx.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.password_tbx.Location = new System.Drawing.Point(43, 3);
+            this.password_tbx.Name = "password_tbx";
+            this.password_tbx.Size = new System.Drawing.Size(386, 27);
+            this.password_tbx.TabIndex = 2;
+            this.password_tbx.UseSystemPasswordChar = true;
             // 
             // pictureBox3
             // 
@@ -169,7 +169,7 @@
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.role_cbx);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.Signupbtn);
             this.panel1.Controls.Add(this.Loginbtn);
@@ -190,21 +190,21 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.Usernmetbx);
+            this.panel3.Controls.Add(this.Username_tbx);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Location = new System.Drawing.Point(-1, 167);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(435, 33);
             this.panel3.TabIndex = 4;
             // 
-            // Usernmetbx
+            // Username_tbx
             // 
-            this.Usernmetbx.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.Usernmetbx.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.Usernmetbx.Location = new System.Drawing.Point(43, 3);
-            this.Usernmetbx.Name = "Usernmetbx";
-            this.Usernmetbx.Size = new System.Drawing.Size(386, 27);
-            this.Usernmetbx.TabIndex = 1;
+            this.Username_tbx.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.Username_tbx.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.Username_tbx.Location = new System.Drawing.Point(43, 3);
+            this.Username_tbx.Name = "Username_tbx";
+            this.Username_tbx.Size = new System.Drawing.Size(386, 27);
+            this.Username_tbx.TabIndex = 1;
             // 
             // label4
             // 
@@ -320,16 +320,16 @@
 
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox role_cbx;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Signupbtn;
         private System.Windows.Forms.Button Loginbtn;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox passwordtbx;
+        private System.Windows.Forms.TextBox password_tbx;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox Usernmetbx;
+        private System.Windows.Forms.TextBox Username_tbx;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

@@ -63,6 +63,8 @@
     <Compile Include="BL\Surgeon.cs" />
     <Compile Include="BL\SurgeonAvailability.cs" />
     <Compile Include="BL\User.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="DL\UsersData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\Login.cs">

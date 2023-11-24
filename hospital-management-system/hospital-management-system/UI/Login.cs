@@ -1,4 +1,5 @@
-﻿using System;
+﻿using hospital_management_system.DL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,41 @@ namespace hospital_management_system.UI
         public Login()
         {
             InitializeComponent();
+        }
+
+
+        private void Signupbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new SignUp();
+            f.Show();
+        }
+
+        private void Loginbtn_Click(object sender, EventArgs e)
+        {
+            string name = Usernmetbx.Text.ToString();
+            string password = passwordtbx.Text.ToString();
+            string role = role_cbx.Text.ToString();
+            MessageBox.Show(name + password + role);
+            if (UsersData.FindUser(name, password, role))
+            {
+                MessageBox.Show("user found!");
+            }
+            else
+            {
+                MessageBox.Show("user not found");
+            }
+        }
+
+        private void Exitbtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            // This code will load data of users when the form is loaded
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -37,10 +73,7 @@ namespace hospital_management_system.UI
 
         }
 
-        private void Exitbtn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+       
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -67,17 +100,7 @@ namespace hospital_management_system.UI
 
         }
 
-        private void Signupbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form f = new SignUp();
-            f.Show();
-        }
-
-        private void Loginbtn_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
@@ -117,6 +140,11 @@ namespace hospital_management_system.UI
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Login_Load_1(object sender, EventArgs e)
+        {
+            UsersData.LoadUsersFromDB();
         }
     }
 }

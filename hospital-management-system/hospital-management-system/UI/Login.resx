@@ -153,40 +153,40 @@
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="comboBox1.Items" xml:space="preserve">
+  <data name="role_cbx.Items" xml:space="preserve">
     <value>Admin</value>
   </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
+  <data name="role_cbx.Items1" xml:space="preserve">
     <value>Doctor</value>
   </data>
-  <data name="comboBox1.Items2" xml:space="preserve">
+  <data name="role_cbx.Items2" xml:space="preserve">
     <value>Surgeon</value>
   </data>
-  <data name="comboBox1.Items3" xml:space="preserve">
+  <data name="role_cbx.Items3" xml:space="preserve">
     <value>Nurse</value>
   </data>
-  <data name="comboBox1.Items4" xml:space="preserve">
+  <data name="role_cbx.Items4" xml:space="preserve">
     <value>Patient</value>
   </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="role_cbx.Location" type="System.Drawing.Point, System.Drawing">
     <value>210, 255</value>
   </data>
-  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="role_cbx.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 32</value>
   </data>
-  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="role_cbx.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
+  <data name="&gt;&gt;role_cbx.Name" xml:space="preserve">
+    <value>role_cbx</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;role_cbx.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;role_cbx.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;role_cbx.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
@@ -318,18 +318,6 @@
   <data name="&gt;&gt;Loginbtn.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="passwordtbx.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
-  </data>
-  <data name="passwordtbx.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 3</value>
-  </data>
-  <data name="passwordtbx.Size" type="System.Drawing.Size, System.Drawing">
-    <value>386, 27</value>
-  </data>
-  <data name="passwordtbx.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;passwordtbx.Name" xml:space="preserve">
     <value>passwordtbx</value>
   </data>
@@ -340,21 +328,6 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;passwordtbx.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 5</value>
-  </data>
-  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
-  </data>
-  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
@@ -390,18 +363,6 @@
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="Usernmetbx.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
-  </data>
-  <data name="Usernmetbx.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 3</value>
-  </data>
-  <data name="Usernmetbx.Size" type="System.Drawing.Size, System.Drawing">
-    <value>386, 27</value>
-  </data>
-  <data name="Usernmetbx.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;Usernmetbx.Name" xml:space="preserve">
     <value>Usernmetbx</value>
   </data>
@@ -412,21 +373,6 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;Usernmetbx.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 3</value>
-  </data>
-  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
-  </data>
-  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
@@ -621,6 +567,108 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="passwordtbx.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
+  <data name="passwordtbx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 3</value>
+  </data>
+  <data name="passwordtbx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 27</value>
+  </data>
+  <data name="passwordtbx.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;passwordtbx.Name" xml:space="preserve">
+    <value>passwordtbx</value>
+  </data>
+  <data name="&gt;&gt;passwordtbx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;passwordtbx.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;passwordtbx.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
+    <value>pictureBox3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Usernmetbx.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
+  <data name="Usernmetbx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 3</value>
+  </data>
+  <data name="Usernmetbx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 27</value>
+  </data>
+  <data name="Usernmetbx.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Usernmetbx.Name" xml:space="preserve">
+    <value>Usernmetbx</value>
+  </data>
+  <data name="&gt;&gt;Usernmetbx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Usernmetbx.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;Usernmetbx.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 3</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="Exitbtn.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -719,9 +767,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>950, 500</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Login</value>

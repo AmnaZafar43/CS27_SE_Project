@@ -8,11 +8,11 @@ namespace hospital_management_system.BL
 {
     public class Doctor
     {
-        private int Id { get; set; }
-        private string Name {  get; set; }
-        private string Specialization { get; set; }
-        private string PhoneNumber { get; set; }
-        private string Email { get; set; }
+        private int id;
+        private string name {  get; set; }
+        private string specialization { get; set; }
+        private string phoneNumber { get; set; }
+        private string email { get; set; }
 
         public Doctor() 
         {
@@ -29,5 +29,11 @@ namespace hospital_management_system.BL
             PhoneNumber = phoneNumber;
             Email = email;
         }
+
+        public int Id { get { return this.id; } set { this.id  = value; } }
+        public string Name { get { return this.name; } set { this.name = value; } }
+        public string Specialization { get { return this.specialization; } set { this.specialization = value; } }
+        public string PhoneNumber { get { return this.phoneNumber;} set { this.phoneNumber = value; } }
+        public string Email { get { return this.email; } set { this.email = value; } }
     }
 }

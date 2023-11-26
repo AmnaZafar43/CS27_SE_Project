@@ -1,4 +1,5 @@
 ﻿using hospital_management_system.DL;
+using hospital_management_system.UI.AdminUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,10 +32,12 @@ namespace hospital_management_system.UI
             string name = Usernmetbx.Text.ToString();
             string password = passwordtbx.Text.ToString();
             string role = role_cbx.Text.ToString();
-            MessageBox.Show(name + password + role);
+            
             if (UsersData.FindUser(name, password, role))
             {
-                MessageBox.Show("user found!");
+                this.Hide();
+                Form f = new AdminPortal();
+                f.Show();
             }
             else
             {

@@ -18,3 +18,13 @@ D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hos
 D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.DoctorUI.Appointments.resources
 D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.DoctorUI.Wards.resources
 D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.DoctorUI.Prescription.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.NurseUI.NursePortal.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.Patient_UI.DischargeSummary.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.Patient_UI.LabTestRecords.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.Patient_UI.OperationSchedules.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.Patient_UI.PatientAddmission.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.Patient_UI.PatientEmergencyHistory.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.Patient_UI.PatientInfo.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.Patient_UI.PatientPortal.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.SurgeonUI.SurgeonProtal.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.Patient_UI.AppointmentsPatient.resources

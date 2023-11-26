@@ -1,6 +1,10 @@
-﻿using hospital_management_system.DL;
+﻿using hospital_management_system.BL;
+using hospital_management_system.DL;
 using hospital_management_system.UI.AdminUI;
 using hospital_management_system.UI.DoctorUI;
+using hospital_management_system.UI.Patient_UI;
+using hospital_management_system.UI.SurgeonUI;
+using hospital_management_system.UI.NurseUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -56,7 +60,21 @@ namespace hospital_management_system.UI
                 }
                 if(role == "Patient")
                 {
-
+                    this.Hide();
+                    Form f = new PatientPortal();
+                    f.Show();
+                }
+                if(role == "Surgeon")
+                {
+                    this.Hide();
+                    Form f = new SurgeonProtal();
+                    f.Show();
+                }
+                if(role == "Nurse")
+                {
+                    this.Hide();
+                    Form f = new NursePortal();
+                    f.Show();
                 }
             }
             else

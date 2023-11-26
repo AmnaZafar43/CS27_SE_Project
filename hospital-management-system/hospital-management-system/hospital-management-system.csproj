@@ -86,6 +86,42 @@
     <Compile Include="UI\AdminUI\Doctors_Update_form.Designer.cs">
       <DependentUpon>Doctors_Update_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\DoctorUI\Appointments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DoctorUI\Appointments.Designer.cs">
+      <DependentUpon>Appointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DoctorUI\DoctorPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DoctorUI\DoctorPortal.Designer.cs">
+      <DependentUpon>DoctorPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DoctorUI\Patients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DoctorUI\Patients.Designer.cs">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DoctorUI\Prescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DoctorUI\Prescription.Designer.cs">
+      <DependentUpon>Prescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DoctorUI\Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DoctorUI\Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DoctorUI\Wards.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DoctorUI\Wards.Designer.cs">
+      <DependentUpon>Wards.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +152,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\AdminUI\Doctors_Update_form.resx">
       <DependentUpon>Doctors_Update_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DoctorUI\Appointments.resx">
+      <DependentUpon>Appointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DoctorUI\DoctorPortal.resx">
+      <DependentUpon>DoctorPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DoctorUI\Patients.resx">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DoctorUI\Prescription.resx">
+      <DependentUpon>Prescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DoctorUI\Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DoctorUI\Wards.resx">
+      <DependentUpon>Wards.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

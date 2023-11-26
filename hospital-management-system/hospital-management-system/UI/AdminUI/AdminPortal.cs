@@ -15,6 +15,7 @@ namespace hospital_management_system.UI.AdminUI
         public AdminPortal()
         {
             InitializeComponent();
+            
         }
 
         private void btn_Student_Click(object sender, EventArgs e)

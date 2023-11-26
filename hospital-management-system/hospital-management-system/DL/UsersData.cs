@@ -19,7 +19,7 @@ namespace hospital_management_system.DL
         
         public static bool addUser(string username, string password, string role)
         {
-            if (username != null && password != null && role != null && !FindUser(username,password,role)) 
+            if (username != null && password != null && role != null && FindUser(username,password,role) == 0) 
             {
                 var con = Configuration.getInstance().getConnection();
                 SqlCommand cmd = new SqlCommand("INSERT INTO Users (Username, Password, Role) VALUES (@Username, @Password, @Role)", con);
@@ -61,9 +61,16 @@ namespace hospital_management_system.DL
             return false;
         }
 
-        public static bool FindUser(string username,string password,string role)
+        public static int FindUser(string username,string password,string role)
         {
-            return (users.Find(u => u.UserName == username && u.Password == password && u.Role == role) != null);
+            int id;
+            if (users.Find(u => u.UserName == username && u.Password == password && u.Role == role) != null)
+            {
+                id = users.Find(u => u.UserName == username && u.Password == password && u.Role == role).Id;
+                return id;
+
+            }
+            return 0;
         }
 
         public static void LoadUsersFromDB()
@@ -86,7 +93,22 @@ namespace hospital_management_system.DL
                 users.Add(u);
             }
         }
-
+        public static List<int> getUserIds()
+        {
+            List<int> ids = new List<int>();
+            int id;
+            var con = Configuration.getInstance().getConnection();
+            SqlCommand cmd = new SqlCommand("Select ID from Users where ActiveStatus = 1", con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            foreach (DataRow row in dt.Rows)
+            {
+                id = Convert.ToInt32(row["ID"]);
+                ids.Add(id);
+            }
+            return ids;
+        }
 
     }
 }

@@ -12,3 +12,9 @@ D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hos
 D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.AdminUI.AdminPortal.resources
 D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.AdminUI.Doctors.resources
 D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.AdminUI.Doctors_Update_form.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.DoctorUI.DoctorPortal.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.DoctorUI.Profile.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.DoctorUI.Patients.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.DoctorUI.Appointments.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.DoctorUI.Wards.resources
+D:\Setups\5th Semester\SE LAB\HMS\CS27_SE_Project\hospital-management-system\hospital-management-system\obj\Debug\hospital_management_system.UI.DoctorUI.Prescription.resources

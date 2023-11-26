@@ -9,6 +9,9 @@ using System.Windows.Forms;
 using hospital_management_system.BL;
 using System.Runtime.CompilerServices;
 using System.Web;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Drawing;
+using System.Xml.Linq;
 
 namespace hospital_management_system.DL
 {
@@ -20,10 +23,10 @@ namespace hospital_management_system.DL
 
         public void LoadDoctors()
         {
-            int id;
+            int id, userid;
             string name, spec, email, contact;
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("Select ID,Name,Specialization,Email,Contact from Doctors where ActiveStatus = 1", con);
+            SqlCommand cmd = new SqlCommand("Select ID,Name,Specialization,Email,Contact,UserId from Doctors where ActiveStatus = 1", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -34,25 +37,27 @@ namespace hospital_management_system.DL
                 spec = row["Specialization"].ToString();
                 email = row["Email"].ToString();
                 contact = row["Conact"].ToString();
-                Doctor d = new Doctor(name, spec, email, contact);
+                userid = Convert.ToInt32(row["UserId"]);
+                Doctor d = new Doctor(name, spec, email, contact,userid);
                 d.Id = id;
                 doctors.Add(d);
             }
         }
 
-        public static bool addDoctor(string name, string spec, string contact, string email)
+        public static bool addDoctor(string name, string spec, string contact, string email,int userid)
         {
-            if(name != null && spec != null && contact != null && email != null )
+            if(name != null && spec != null && contact != null && email != null && userid != 0)
             {
-                Doctor d = new Doctor(name,spec,contact,email);
+                Doctor d = new Doctor(name,spec,contact,email,userid);
                 if (!Check_email(d.Email))
                 {
                     var con = Configuration.getInstance().getConnection();
-                    SqlCommand cmd = new SqlCommand("INSERT INTO Doctors (Name, Specialization, Contact, Email) VALUES (@Name, @Specialization, @Contact, @Email)", con);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Doctors (Name, Specialization, Contact, Email, UserId) VALUES (@Name, @Specialization, @Contact, @Email, @UserId)", con);
                     cmd.Parameters.AddWithValue("@Name", d.Name);
                     cmd.Parameters.AddWithValue("@Specialization", d.Specialization);
                     cmd.Parameters.AddWithValue("@Email", d.Email);
                     cmd.Parameters.AddWithValue("@Contact", d.PhoneNumber);
+                    cmd.Parameters.AddWithValue("@UserId", d.UserId);
                     cmd.ExecuteNonQuery();
                     return true;
                 }
@@ -110,10 +115,10 @@ namespace hospital_management_system.DL
 
         public static List<Doctor> LoadDoctorsData()
         {
-            int id;
+            int id,userid;
             string name, spec, cont, email;
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("Select ID,Name,Specialization,Email,Contact from Doctors where ActiveStatus = 1", con);
+            SqlCommand cmd = new SqlCommand("Select ID,Name,Specialization,Email,Contact,UserId from Doctors where ActiveStatus = 1", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -124,12 +129,25 @@ namespace hospital_management_system.DL
                 spec = row["Specialization"].ToString();
                 cont = row["Contact"].ToString();
                 email = row["Email"].ToString();
-                Doctor u = new Doctor(name, spec, cont, email);
+                userid = Convert.ToInt32(row["UserId"]);
+                Doctor u = new Doctor(name, spec, cont, email,userid);
                 u.Id = id;
                 doctors.Clear();
                 doctors.Add(u);
             }
             return doctors;
+        }
+        public static Doctor findDoctor(int id)
+        {
+             foreach (Doctor doctor in doctors) 
+            { 
+                if (doctor.Id == id)
+                {
+                    return doctor;
+                }
+            }
+            return null;
+
         }
     }
 }

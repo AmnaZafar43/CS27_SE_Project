@@ -1,5 +1,6 @@
 ﻿using hospital_management_system.DL;
 using hospital_management_system.UI.AdminUI;
+using hospital_management_system.UI.DoctorUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,17 +28,36 @@ namespace hospital_management_system.UI
             f.Show();
         }
 
+        private void Login_Load_1(object sender, EventArgs e)
+        {
+            UsersData.LoadUsersFromDB();
+        }
+
         private void Loginbtn_Click(object sender, EventArgs e)
         {
             string name = Usernmetbx.Text.ToString();
             string password = passwordtbx.Text.ToString();
             string role = role_cbx.Text.ToString();
-            
-            if (UsersData.FindUser(name, password, role))
+            int id = UsersData.FindUser(name, password, role);
+
+            if (id != 0)
             {
-                this.Hide();
-                Form f = new AdminPortal();
-                f.Show();
+                if(role == "Admin")
+                {
+                    this.Hide();
+                    Form f = new AdminPortal();
+                    f.Show();
+                }
+                if(role == "Doctor")
+                {
+                    this.Hide();
+                    Form f = new DoctorPortal();
+                    f.Show();
+                }
+                if(role == "Patient")
+                {
+
+                }
             }
             else
             {
@@ -145,9 +165,6 @@ namespace hospital_management_system.UI
 
         }
 
-        private void Login_Load_1(object sender, EventArgs e)
-        {
-            UsersData.LoadUsersFromDB();
-        }
+        
     }
 }

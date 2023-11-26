@@ -95,9 +95,10 @@ namespace hospital_management_system.UI.AdminUI
             spec = Specialization_tbx.Text.ToString();
             cont = Contact_textBox.Text.ToString();
             email = Email_textBox.Text.ToString();
+            int userid = Convert.ToInt32(userids_cbx.Text);
             if (name != "" && spec != "" && cont != "" && email != "")
             {
-               if(DoctorsData.addDoctor(name,spec, cont, email))
+               if(DoctorsData.addDoctor(name,spec, cont, email, userid))
                 {
                     MessageBox.Show("successfully added!");
                     binddata();
@@ -165,6 +166,7 @@ namespace hospital_management_system.UI.AdminUI
             doctorBindingSource.DataSource = DoctorsData.LoadDoctorsData();
             Dcotors_dgv.DataSource = doctorBindingSource;
             Dcotors_dgv.AutoGenerateColumns = true;
+            userids_cbx.DataSource = UsersData.getUserIds();
         }
 
         private void Doctors_Load(object sender, EventArgs e)

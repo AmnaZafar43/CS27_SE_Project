@@ -6,7 +6,7 @@ The aim of this task is to develop a web application about hospital management s
 
 **Technology:**
 
-Web Based Project , Html , CSS , JavaScript , MongoDB
+.NET Framwok with SQL Server Data Base
 
 **Developer:**
 
